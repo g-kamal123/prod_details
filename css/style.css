@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.primary{
+    color: #1D4ED8;
+}
+
+.secondary{
+    color: #2563EB;
+}
+
+.product{ 
+    display: flex;
+    gap: 1rem;
+    max-width: 1140px;
+    width: 900px;
+    margin: 3rem auto;
+}
+
+.product__graphics{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1 0 50%;
+    gap: 0.5rem;
+}
+
+.product__content{
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product__image{
+    background-color: black;
+    flex: 0 0 calc((100% - 1rem)/3);
+    max-height: 10rem;
+}
+
+.product__image-item{
+    height: 100%;
+    width: 100%;
+}
+
+.product__image--fullwidth{
+    flex: 0 0 100%;
+    max-height: 22rem;
+}
+
+.product__desc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product__star{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.product__about{
+    margin: 0;
+}
+
+.product__colors{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.product__colors-block{
+    height: 2rem;
+    width: 2rem;
+    background: black;
+}
+
+.product__colors-block--pink{
+    background-color: #F9A8D4;
+}
+
+.product__colors-block--red{
+    background-color: #EF4444;
+}
+
+.product__colors-block--yellow{
+    background-color: #F59E0B;
+}
+
+.product__colors-block--grey{
+    background-color: #E5E7EB;
+}
+
+.product__size{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.product__size-item{
+    border: 1px solid #2563EB;
+    flex: 0 0 calc((100% - 1rem)/2);
+    padding: 1em;
+}
+
+.product__size-item h4{
+    margin-top: 0;
+}
+
+.product__buttons{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1em;
+}
+
+.product__btn{
+    border: 1px dashed #1D4ED8;
+    background-color: #DBEAFE;
+    width: 100%;
+    padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .product{
+        width: 400px;
+    }
+}
